@@ -1,8 +1,8 @@
 public abstract class Animal implements InterfaceZooAnimals {
-    private String name;
-    private int age;
-    private int weight;
-    private String color;
+    public String name;
+    public int age;
+     public int weight;
+    public String color;
 
     public Animal(String name, int age, int weight, String color) {
         this.name = name;
@@ -10,6 +10,7 @@ public abstract class Animal implements InterfaceZooAnimals {
         this.weight = weight;
         this.color = color;
     }
+    public Animal(){}
 
 
 
@@ -18,8 +19,8 @@ public abstract class Animal implements InterfaceZooAnimals {
         this.name = name;
     }
 
-    public int getName() {
-        return this.name
+    public String getName() {
+        return this.name;
     }
 
     public void setAge(int age) {
@@ -61,7 +62,7 @@ public abstract class Animal implements InterfaceZooAnimals {
 
     }
 
-public void ShowInfo(){
+public void ShowInfo1(){
     System.out.println("Property: ");
     System.out.println("Name: " + this.name);
     System.out.println("Age: " + this.age);

@@ -3,23 +3,28 @@ public class Chupakabra extends Animal implements InterfaceZooAnimals{
         super(name, age, weight, color);
     }
 
+    public Chupakabra() {
+        super();
+        System.out.println("Chupakabra");}
+
+
     @Override
     public void makeSound() {
-        super.makeSound(){
+        super.makeSound();
             System.out.println("Hello boy do you know who I am? ;)");
-        };
+
     }
 
     @Override
     public void showTalants() {
-        super.showTalants(){
+        super.showTalants();{
             System.out.println("I can drink your blood through 2 small holes in your neck");
         }
     }
 
     @Override
     public void eat() {
-        super.eat(){
+        super.eat();{
             System.out.println("Your tasty blood ;)");
         }
     }

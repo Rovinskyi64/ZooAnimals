@@ -3,23 +3,27 @@ public class Python extends Animal implements InterfaceZooAnimals {
         super(name, age, weight, color);
     }
 
+    public Python() {
+        super();
+        System.out.println("Python");}
+
     @Override
     public void makeSound() {
-        super.makeSound(){
+        super.makeSound();
             System.out.println("ShShShSh....bleat ;)");
-        };
+
     }
 
     @Override
     public void showTalants() {
-        super.showTalants(){
+        super.showTalants();{
             System.out.println("Come to me i`ll hug you so :)");
         }
     }
 
     @Override
     public void eat() {
-        super.eat(){
+        super.eat();{
             System.out.println("I like big mouse and whiskey ;)");
         }
     }
