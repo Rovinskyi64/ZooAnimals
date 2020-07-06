@@ -1,7 +1,9 @@
+package Animals;
+
 public abstract class Animal implements InterfaceZooAnimals {
     public String name;
     public int age;
-     public int weight;
+    public int weight;
     public String color;
 
     public Animal(String name, int age, int weight, String color) {
@@ -10,11 +12,13 @@ public abstract class Animal implements InterfaceZooAnimals {
         this.weight = weight;
         this.color = color;
     }
-    public Animal(){}
+
+    public Animal() {
+    }
 
 
 
-
+/*
     public void setName(String name) {
         this.name = name;
     }
@@ -45,7 +49,7 @@ public abstract class Animal implements InterfaceZooAnimals {
     public String getColor() {
         return this.color;
     }
-
+*/
 
     @Override
     public void makeSound() {
@@ -62,11 +66,11 @@ public abstract class Animal implements InterfaceZooAnimals {
 
     }
 
-public void ShowInfo1(){
-    System.out.println("Property: ");
-    System.out.println("Name: " + this.name);
-    System.out.println("Age: " + this.age);
-    System.out.println("Weight: " + this.weight);
-    System.out.println("Color: " + this.color);
-}
+    public void ShowInfo1() {
+        System.out.println("Property: ");
+        System.out.println("Name: " + this.name);
+        System.out.println("Age: " + this.age);
+        System.out.println("Weight: " + this.weight);
+        System.out.println("Color: " + this.color);
+    }
 }
